@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     steps:
     - name: Checkout repository
@@ -33,7 +33,7 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: msbuild TaskbarGroups.sln /p:Configuration=Release
+      run: dotnet build TaskbarGroups.sln --configuration Release
 
     - name: Publish
       run: dotnet publish --configuration Release --output ./publish
