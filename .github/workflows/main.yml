@@ -36,4 +36,4 @@ jobs:
       run: dotnet build TaskbarGroups.sln --configuration Release
 
     - name: Publish
-      run: dotnet publish --configuration Release --output ./publish
+      run: dotnet publish TaskbarGroups.sln --configuration Release --output ./publish
