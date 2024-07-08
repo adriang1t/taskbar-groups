@@ -253,8 +253,4 @@
   <PropertyGroup>
     <AllowedReferenceRelatedFileExtensions>Microsoft.WindowsAPICodePack.xml</AllowedReferenceRelatedFileExtensions>
   </PropertyGroup>
-  <PropertyGroup>
-    <Platforms>x86</Platforms>
-    <RuntimeIdentifier>win-x86</RuntimeIdentifier>
-  </PropertyGroup>
 </Project>
