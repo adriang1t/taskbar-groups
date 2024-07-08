@@ -24,7 +24,7 @@ jobs:
 
     - name: Install required workloads
       run: |
-        choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools --add Microsoft.VisualStudio.Workload.NetCoreBuildTools --add Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools --includeRecommended --includeOptional"
+        choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools --add Microsoft.VisualStudio.Workload.NetCoreBuildTools --add Microsoft.VisualStudio.Workload.VisualStudioExtensionBuildTools --add Microsoft.Component.MSBuild --includeRecommended --includeOptional"
 
     - name: Install NuGet CLI
       run: choco install nuget.commandline
