@@ -19,6 +19,9 @@ jobs:
       with:
         dotnet-version: 6.0.x
 
+    - name: Install .NET Core SDK
+      run: choco install dotnetcore-sdk
+
     - name: Restore NuGet packages
       run: nuget restore TaskbarGroups.sln
 
@@ -26,7 +29,7 @@ jobs:
       run: dotnet restore
 
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build --configuration Release --runtime win-x86
 
     - name: Publish
-      run: dotnet publish --configuration Release --output ./publish
+      run: dotnet publish --configuration Release --runtime win-x86 --output ./publish
