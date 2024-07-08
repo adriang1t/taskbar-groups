@@ -2,6 +2,7 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/tjackenpacken/taskbar-groups/master/main/Icon.ico" alt="Logo" width="150" height="150" />
+	
 </p>
 <h1 align="center">Taskbar Groups</h1>
 <p align="center">
