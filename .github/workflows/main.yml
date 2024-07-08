@@ -2,9 +2,9 @@ name: Build Taskbar Groups
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -27,5 +27,3 @@ jobs:
 
     - name: Publish
       run: dotnet publish --configuration Release --output ./publish
-
-      # Trigger workflow
